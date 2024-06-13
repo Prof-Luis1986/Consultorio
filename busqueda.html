@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Búsqueda de Citas Médicas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/Consultorio.png" alt="Consultorio">
+        <marquee berhavior="alternate" class="marquesina">Consultorio Medico</marquee>
+      </div>
+  <div id="Pantalla_Busqueda">
+    <h1>Búsqueda de Citas</h1>
+    <table id="tblCitas">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Especialidad</th>
+          <th>Doctor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Las citas se llenarán aquí dinámicamente -->
+      </tbody>
+    </table>
+    <button id="btnVolverIndex">Volver</button>
+  </div>
+
+  <script>
+    document.getElementById('btnVolverIndex').addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
+
+    // Obtener y mostrar las citas guardadas
+    let citas = JSON.parse(localStorage.getItem('citas')) || [];
+    let tbody = document.getElementById('tblCitas').getElementsByTagName('tbody')[0];
+
+    citas.forEach(function(cita) {
+      let row = tbody.insertRow();
+      row.insertCell(0).textContent = cita.nombre;
+      row.insertCell(1).textContent = cita.edad;
+      row.insertCell(2).textContent = cita.especialidad;
+      row.insertCell(3).textContent = cita.doctor;
+    });
+  </script>
+</body>
+</html>

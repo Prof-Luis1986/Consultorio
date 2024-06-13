@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(217deg, rgba(2, 127, 173, 0.8), rgba(4, 163, 94, 0) 70.71%),
+              linear-gradient(127deg, rgba(10, 82, 101, 0.8), rgba(4, 31, 53, 0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Permitir la alineación vertical */
+}
+
+.header {
+  width: 100%;
+  background-color: #007BFF;
+  display: flex; /* Usar flexbox para la alineación */
+  justify-content: flex-start; /* Alinear el contenido a la izquierda */
+  padding: 10px 20px; /* Añadir padding para espacio alrededor de la imagen */
+  margin-bottom: 20px; /* Separar la cabecera del contenido principal */
+  align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.header img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px; /* Añadir un margen derecho para separar la imagen del marquee */
+}
+
+.marquesina {
+  color: #fff; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Hacer el texto en negrita (opcional) */
+}
+
+#Pantalla_Inicio, #Pantalla_Registro {
+  background-color: rgb(31, 85, 246);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

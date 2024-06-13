@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Citas Médicas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="/Consultorio.png" alt="Consultorio">
+    <marquee berhavior="alternate" class="marquesina">Consultorio Medico</marquee>
+  </div>
+  <div id="Pantalla_Inicio">
+    <h1>Registro de Citas Médicas</h1>
+    <input type="text" id="txtNombre" placeholder="Nombre">
+    <input type="text" id="txtEdad" placeholder="Edad">
+    <select id="cmbEspecialidad">
+      <option value="">Seleccione la especialidad de su médico:</option>
+      <option value="Medicina General">Medicina General</option>
+      <option value="Oftalmología">Oftalmología</option>
+      <option value="Gastroenterología">Gastroenterología</option>
+      <option value="Dermatología">Dermatología</option>
+      <option value="Odontología">Odontología</option>
+    </select>
+    <select id="cmbDoctor">
+      <option value="">Seleccione el nombre de su médico:</option>
+      <option value="Dr.Arturo Lopez Hernandez">Dr. Arturo Lopez Hernandez</option>
+      <option value="Dra.Eva María Romero Rubio">Dra. Eva María Romero Rubio</option>
+      <option value="Dr.Ernesto Favela Hernandez">Dr. Ernesto Favela Hernandez</option>
+      <option value="Dra.Mariah José Flores Ruíz">Dra. Mariah José Flores Ruíz</option>
+      <option value="Dr.Salomón David Pérez Pacia">Dr. Salomón David Pérez Pacia</option>
+      <option value="Dr.Maximiliano Salas Hershberger">Dr. Maximiliano Salas Hershberger</option>
+      <option value="Dra.Anabella Linares Parra">Dra. Anabella Linares Parra</option>
+      <option value="Dra.Jiwoo Lee Ha">Dra. Jiwoo Lee Ha</option>
+      <option value="Dr.Eduardo Pérez López">Dr. Eduardo Pérez López</option>
+    </select>
+    <button id="btnIngresar">Ingresar Cita</button>
+    <button id="btnBusqueda">Buscar Cita</button>
+  </div>
+
+  <div id="Pantalla_Registro" style="display: none;">
+    <h1>Registro de Cita</h1>
+    <p>Nombre: <span id="lblNombre"></span></p>
+    <p>Edad: <span id="lblEdad"></span></p>
+    <p>Especialidad: <span id="lblEspecialidad"></span></p>
+    <p>Doctor: <span id="lblDoctor"></span></p>
+    <button id="btnVolver">Volver</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
